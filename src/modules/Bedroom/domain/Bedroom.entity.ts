@@ -1,4 +1,5 @@
 import { Entity, ID, Name } from '@common';
+import { House } from 'src/modules/House/domain/House.entity';
 
 export interface IBedroom {
   name: Name;
@@ -6,6 +7,7 @@ export interface IBedroom {
   length: number;
   orientation: string;
   meters: number;
+  house: House;
 }
 
 export class Bedroom extends Entity<IBedroom> {
