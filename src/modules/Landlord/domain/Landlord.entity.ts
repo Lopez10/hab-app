@@ -5,7 +5,7 @@ export interface ILandLord extends IUser {
   meters: number;
 }
 
-export class Renter extends Entity<ILandLord> {
+export class Landlord extends Entity<ILandLord> {
   constructor(props: ILandLord, id?: ID) {
     super(props, id);
   }

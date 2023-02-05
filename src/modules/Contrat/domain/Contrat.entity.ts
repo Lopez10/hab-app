@@ -1,7 +1,11 @@
 import { Entity, ID, Name } from '@common';
+import { Bedroom } from 'src/modules/Bedroom/domain/Bedroom.entity';
+import { Landlord } from 'src/modules/Landlord/domain/Landlord.entity';
 
 export interface IContrat {
   name: Name;
+  landlord: Landlord;
+  bedroom: Bedroom;
 }
 
 export class Contrat extends Entity<IContrat> {
