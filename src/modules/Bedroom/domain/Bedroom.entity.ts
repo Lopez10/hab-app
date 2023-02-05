@@ -5,6 +5,7 @@ export interface IBedroom {
   width: number;
   length: number;
   orientation: string;
+  meters: number;
 }
 
 export class Bedroom extends Entity<IBedroom> {
