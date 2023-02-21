@@ -4,4 +4,4 @@ export * from './id.valueObject';
 export * from './password.valueObject';
 export * from './name.valueObject';
 export * from './description.valueObject';
-export * from './gymNumber.valueObject';
+export * from './orientation.valueObject';
