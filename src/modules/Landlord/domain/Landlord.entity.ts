@@ -1,8 +1,9 @@
 import { Entity, ID } from '@common';
+import { Contrat } from 'src/modules/Contrat/domain/Contrat.entity';
 import { IUser } from 'src/modules/User/domain/User.entity';
 
 export interface ILandLord extends IUser {
-  meters: number;
+  contrat: Contrat;
 }
 
 export class Landlord extends Entity<ILandLord> {
