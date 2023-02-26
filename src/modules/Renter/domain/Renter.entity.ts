@@ -1,9 +1,9 @@
 import { Entity, ID } from '@common';
-import { House } from 'src/modules/House/domain/House.entity';
+import { Contrat } from 'src/modules/Contrat/domain/Contrat.entity';
 import { IUser } from 'src/modules/User/domain/User.entity';
 
 export interface IRenter extends IUser {
-  houses: House[];
+  contrat: Contrat[];
 }
 
 export class Renter extends Entity<IRenter> {
