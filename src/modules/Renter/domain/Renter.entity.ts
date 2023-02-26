@@ -3,7 +3,7 @@ import { Contrat } from 'src/modules/Contrat/domain/Contrat.entity';
 import { IUser } from 'src/modules/User/domain/User.entity';
 
 export interface IRenter extends IUser {
-  contrat: Contrat[];
+  contrats: Contrat[];
 }
 
 export class Renter extends Entity<IRenter> {
