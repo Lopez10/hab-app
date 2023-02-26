@@ -1,10 +1,10 @@
-import { Email, Entity, ID, Name, Password, Phone } from '@common';
+import { Entity, ID, Name, Phone } from '@common';
+import { DNI } from '@common/domain/valueObject/valueObjects/DNI.valueObject';
 
 export interface IUser {
   name: Name;
   phone: Phone;
-  email: Email;
-  password: Password;
+  DNI: DNI;
 }
 
 export class User extends Entity<IUser> {
