@@ -9,7 +9,7 @@ export const passwordValidations = {
 
   haveUppercaseAndLowercase: (password: string): boolean => {
     let uppercase = false;
-    const lowercase = false;
+    let lowercase = false;
 
     for (let index = 0; index < password.length; index++) {
       if (
@@ -23,7 +23,7 @@ export const passwordValidations = {
         !lowercase &&
         password.charAt(index) === password.charAt(index).toLowerCase()
       ) {
-        uppercase = true;
+        lowercase = true;
       }
 
       if (uppercase && lowercase) {

@@ -11,7 +11,7 @@ export interface DomainPrimitive<T extends Primitives | Date> {
 type ValueObjectProps<T> = T extends Primitives | Date ? DomainPrimitive<T> : T;
 
 export abstract class ValueObject<T> {
-  protected readonly props: ValueObjectProps<T>;
+  readonly props: ValueObjectProps<T>;
 
   constructor(props: ValueObjectProps<T>) {
     this.validate(props);
